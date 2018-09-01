@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  pact_webapi:
+    image: ${DOCKER_REGISTRY}pactwebapi
+    build:
+      context: .
+      dockerfile: Pact_WebApi/Dockerfile
+
