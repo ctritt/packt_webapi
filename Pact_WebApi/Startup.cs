@@ -130,7 +130,10 @@ namespace Pact_WebApi
             });
 
             app.UseHttpsRedirection();
-            app.AddSeedData();
+            if (env.IsDevelopment())
+            {
+                app.AddSeedData();
+            }
             app.UseMvc();
         }
     }
