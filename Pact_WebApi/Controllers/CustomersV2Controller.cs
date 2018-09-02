@@ -13,7 +13,7 @@ using Pact_WebApi.Repositories;
 namespace Pact_WebApi.Controllers
 {
     [ApiVersion("2.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
+    [Route("api/v{version:apiVersion}/customers")]
     [ApiController]
     public class CustomersV2Controller : ControllerBase
     {
